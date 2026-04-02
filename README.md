@@ -14,6 +14,10 @@ Loads & shows:
 
 📢 Banner Ads
 
+## Quick Admob Integrator [Best Found]
+
+[QuickAdMobIntegrator](https://github.com/IShix-g/QuickAdMobIntegrator)
+
 ## Ad Mediation
 
 How to Add Mediation and what you need to import
