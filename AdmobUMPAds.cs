@@ -114,8 +114,8 @@ public class AdmobUMPAds : MonoBehaviour
         bool canRequestAds = ConsentInformation.ConsentStatus == ConsentStatus.Obtained ||
                              ConsentInformation.ConsentStatus == ConsentStatus.NotRequired;
 
-        GoogleMobileAds.Mediation.UnityAds.Api.UnityAds.SetConsentMetaData("gdpr.consent", _consentGiven);
-        GoogleMobileAds.Mediation.UnityAds.Api.UnityAds.SetConsentMetaData("privacy.consent", _consentGiven);
+        GoogleMobileAds.Mediation.UnityAds.Api.UnityAds.SetConsentMetaData("gdpr.consent", canRequestAds);
+        GoogleMobileAds.Mediation.UnityAds.Api.UnityAds.SetConsentMetaData("privacy.consent", canRequestAds);
 
         OnConsentUpdated?.Invoke(canRequestAds);
         InitializeMobileAds();
